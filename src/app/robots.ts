@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://crispbowl.com/sitemap.xml',
+    sitemap: (process.env.NEXT_PUBLIC_SITE_URL || 'https://crispbowl.lhossinelahmidi.workers.dev') + '/sitemap.xml',
   }
 }

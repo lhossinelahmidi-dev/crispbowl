@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { getAllRecipes, getCategories } from '@/lib/recipes'
 import { getAllBlogPosts } from '@/lib/blog'
 
-const BASE_URL = 'https://crispbowl.com'
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://crispbowl.lhossinelahmidi.workers.dev'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const recipes = await getAllRecipes()
