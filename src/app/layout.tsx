@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical: "https://crispbowl.com",
   },
   verification: {
-    google: "oUPhF11wn-gnPRkFfLOZoA7nIULrlfWvyVzxItKwR_o",
+    google: ["1S-lr016uRQNr9YakIHIGPx7jyvAen9HNdmzKa-Zg2w", "oUPhF11wn-gnPRkFfLOZoA7nIULrlfWvyVzxItKwR_o"],
     other: {
       "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION || "",
     },
